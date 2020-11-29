@@ -2,7 +2,7 @@ import React from "react";
 
 function Gift(props) {
   return (
-    <div>
+    <div className="products">
       <img src={props.image} alt={props.title} />
       <p>{props.title}</p>
       <p>{props.price}</p>

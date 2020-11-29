@@ -78,13 +78,37 @@ class GiftList extends React.Component {
         url: "https://www.linkedin.com/in/inesbarroso/",
       },
     ],
+
+    /* giftCategory: [], */
   };
+
+  /* handleBtns = (event) => {
+let giftCategory;
+if(event.target.value==="All"){
+    giftCategory=this.state.products;
+}
+else {
+    giftCategory=this.state.giftCategory.filter(item => item.category===event.target.value)
+    this.setState({giftCategory : giftCategory})
+} 
+    
+    
+} */
+
   render() {
     return (
       <div>
-        {this.state.gifts.map((item) => (
-          <Gift {...item} />
-        ))}
+        {/* <div className="btns">
+          <button value="woman" onClick {handleBtns}>Woman</button>
+          <button value="man" onClick {this.handleBtns}>Man</button>
+          <button value="kids" onClick {this.handleBtns}>Kids</button>
+          <button value="all" onClick {this.handleBtns}>All</button>
+        </div>  */}
+        <div>
+          {this.state.gifts.map((item) => (
+            <Gift {...item} /* handleBtns={this.handleBtns} */ />
+          ))}
+        </div>
       </div>
     );
   }
