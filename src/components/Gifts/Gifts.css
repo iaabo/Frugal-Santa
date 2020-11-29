@@ -1,0 +1,14 @@
+.products {
+  display: inline-block;
+  /*  margin-top: 10px;
+  margin-bottom: 20px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  text-align: center;
+  padding: 10px 5px 20px 0px;
+}
+
+.product-img {
+  height: 300px;
+  width: 350px;
+}

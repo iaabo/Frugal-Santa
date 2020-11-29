@@ -1,5 +1,6 @@
 import React from "react";
 import Gift from "./Gift";
+import "../Home/Home.css";
 
 class GiftList extends React.Component {
   state = {
@@ -98,12 +99,20 @@ else {
   render() {
     return (
       <div>
-        {/* <div className="btns">
-          <button value="woman" onClick {handleBtns}>Woman</button>
-          <button value="man" onClick {this.handleBtns}>Man</button>
-          <button value="kids" onClick {this.handleBtns}>Kids</button>
-          <button value="all" onClick {this.handleBtns}>All</button>
-        </div>  */}
+        <div className="budget-question">
+          <button value="woman" className="button-menu">
+            Woman
+          </button>
+          <button value="man" className="button-menu">
+            Man
+          </button>
+          <button value="kids" className="button-menu">
+            Kids
+          </button>
+          <button value="all" className="button-menu">
+            All
+          </button>
+        </div>
         <div>
           {this.state.gifts.map((item) => (
             <Gift {...item} /* handleBtns={this.handleBtns} */ />
