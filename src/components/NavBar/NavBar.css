@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #0000;
+  background-color: #e8aa8c;
   height: 80px;
   display: flex;
   justify-content: start;
@@ -12,17 +12,21 @@
 }
 
 .nav-menu {
-  background-color: #000;
+  background-color: #e8aa8c;
   width: 250px;
   height: 100vh;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
-  /* left: -100%; */
+  left: -100%;
   transition: 850ms;
 }
 
+.nav-menu-items {
+  margin: 0;
+  padding: 0;
+}
 .nav-menu.active {
   left: 0;
   transition: 350ms;
@@ -32,7 +36,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 8px 0px 8px 16px;
+  padding: 8px 0px 8px 8px;
   list-style: none;
   height: 60px;
 }
@@ -41,16 +45,17 @@
   text-decoration: none;
   color: #fff;
   font-size: 18px;
-  width: 95%;
+  width: 90%;
   height: 100%;
   display: flex;
+  padding: 8px;
   align-items: center;
-  padding: 0 16px;
+  /* padding: 0 16px; */
   border-radius: 4px;
 }
 
 .nav-text a:hover {
-  background-color: #1a831a;
+  background-color: #5e616a;
 }
 
 .nav-menu-items {
@@ -58,7 +63,7 @@
 }
 
 .navbar-toggle {
-  background-color: #000;
+  background-color: #e8aa8c;
   width: 100%;
   height: 80px;
   display: flex;
