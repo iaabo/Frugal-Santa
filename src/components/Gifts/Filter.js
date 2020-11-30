@@ -4,7 +4,7 @@ import "./Gifts.css";
 function Filter(props) {
   const { value, handleChange } = props;
   return (
-    <div className="select">
+    <div className="custom-select">
       <select value={value} onChange={handleChange}>
         <option value="">All</option>
         <option value="woman">Woman</option>
