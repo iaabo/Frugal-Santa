@@ -1,5 +1,6 @@
 import React from "react";
 import Gift from "./Gift";
+import Filter from "./Filter";
 import "../Home/Home.css";
 
 class GiftList extends React.Component {
@@ -79,45 +80,33 @@ class GiftList extends React.Component {
         url: "https://www.linkedin.com/in/inesbarroso/",
       },
     ],
-
-    /* giftCategory: [], */
+    giftsCategory: "",
   };
 
-  /* handleBtns = (event) => {
-let giftCategory;
-if(event.target.value==="All"){
-    giftCategory=this.state.products;
-}
-else {
-    giftCategory=this.state.giftCategory.filter(item => item.category===event.target.value)
-    this.setState({giftCategory : giftCategory})
-} 
-    
-    
-} */
+  handleChangeFilter = (event) => {
+    this.setState({
+      giftsCategory: event.target.value,
+    });
+  };
+
+  getFilteredGifts() {
+    const { gifts, giftsCategory } = this.state;
+    if (!giftsCategory) {
+      return gifts;
+    }
+    return gifts.filter((gifts) => gifts.category === giftsCategory);
+  }
 
   render() {
+    const gifts = this.getFilteredGifts();
     return (
       <div>
-        <div className="budget-question">
-          <button value="woman" className="button-menu">
-            Woman
-          </button>
-          <button value="man" className="button-menu">
-            Man
-          </button>
-          <button value="kids" className="button-menu">
-            Kids
-          </button>
-          <button value="all" className="button-menu">
-            All
-          </button>
-        </div>
-        <div>
-          {this.state.gifts.map((item) => (
-            <Gift {...item} /* handleBtns={this.handleBtns} */ />
-          ))}
-        </div>
+        <h1>Choose the Category</h1>
+        <Filter
+          value={this.state.giftsCategory}
+          handleChange={this.handleChangeFilter}
+        />
+        <Gift gifts={gifts} />
       </div>
     );
   }

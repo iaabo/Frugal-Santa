@@ -2,12 +2,21 @@ import React from "react";
 import "./Gifts.css";
 
 function Gift(props) {
+  /*  let gifts = props.gifts.map((gift) => {
+    return <Gift title={gift.title} price={gift.price} image={gift.image} />;
+  }); */
   return (
-    <div className="products">
-      <img src={props.image} alt={props.title} className="product-img" />
-      <p className="product-title">{props.title}</p>
-      <p className="product-price">{props.price} € (Tax Included)</p>
-    </div>
+    <ul>
+      {props.gifts.map((gift) => (
+        <li key={gift.id} className="products">
+          <li>{gift.title}</li>
+          <li>{gift.price}</li>
+          <li>
+            <img src={gift.image} className="product-img" />
+          </li>
+        </li>
+      ))}
+    </ul>
   );
 }
 

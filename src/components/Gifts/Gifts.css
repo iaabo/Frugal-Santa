@@ -1,5 +1,6 @@
 .products {
   display: inline-block;
+  margin-top: 50px;
   /*  margin-top: 10px;
   margin-bottom: 20px; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -11,4 +12,11 @@
 .product-img {
   height: 300px;
   width: 350px;
+}
+
+select {
+  background: #e8aa8c;
+  border: none;
+  font-size: 20px;
+  text-align: center;
 }
