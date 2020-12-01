@@ -8,9 +8,9 @@ function Gift(props) {
         {props.gifts.map((gift) => (
           <div className="products">
             <img src={gift.image} className="product-img" />
-            <p>{gift.title}</p>
-            <p>{gift.price}</p>
-            <button>View Details</button>
+            <h1 className="gift-title">{gift.title}</h1>
+            <p>{gift.price}€</p>
+            <button className="gift-button">View Details</button>
           </div>
         ))}
       </div>
