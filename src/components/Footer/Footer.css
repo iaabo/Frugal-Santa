@@ -1,0 +1,19 @@
+.logo-f {
+  width: 170px;
+  height: 100%;
+}
+
+.footer {
+  background-color: #e8aa8c;
+  height: 110px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* .copyrights-text {
+  color: #5e616a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+} */

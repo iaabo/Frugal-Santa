@@ -1,13 +1,14 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
+import GiftList from "../Gifts/GiftList";
 
-const GiftsUnder50 = () => {
+function GiftsUnder50() {
   return (
     <div>
       <NavBar />
-      Gifts under 50
+      <GiftList />
     </div>
   );
-};
+}
 
 export default GiftsUnder50;

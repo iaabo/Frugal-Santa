@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
 import "./Home.css";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
@@ -28,8 +29,10 @@ const Home = () => {
           <button className="button-menu">
             <Link to="gifts50">20€-50€</Link>
           </button>
+          
         </div>
       </div>{" "}
+      <Footer />
     </div>
   );
 };

@@ -1,10 +1,12 @@
 import React from "react";
 import Gift from "./Gift";
 import Filter from "./Filter";
+/* import SearchBar from "./SearchBar"; */
 import "../Home/Home.css";
 
 class GiftList extends React.Component {
   state = {
+    searchValue: "",
     gifts: [
       {
         id: 1,
@@ -250,6 +252,10 @@ class GiftList extends React.Component {
     ],
     giftsCategory: "",
   };
+  /* searchProductHandler = (event) => {
+    const inputValue = event.target.value;
+    this.setState({ searchValue: inputValue });
+  }; */
 
   handleChangeFilter = (event) => {
     this.setState({
@@ -267,14 +273,22 @@ class GiftList extends React.Component {
 
   render() {
     const gifts = this.getFilteredGifts();
+
     return (
       <div>
+        {/* <SearchBar searchProductHandler={this.searchGifts} /> */}
+       
         <h1 className="chooseCategory-title">Choose the Category</h1>
+
         <Filter
           value={this.state.giftsCategory}
           handleChange={this.handleChangeFilter}
         />
         <Gift gifts={gifts} />
+
+        {/* {this.state.gifts.map((gift) => (
+          <Gift {...gift} key={gift.id} />
+        ))} */}
       </div>
     );
   }

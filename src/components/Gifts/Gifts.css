@@ -2,8 +2,9 @@
   display: inline-block;
   text-align: center;
   margin-top: 50px;
-  /*  margin-top: 10px;
-  margin-bottom: 20px; */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  /* border: 1px solid #5e616a; */
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   max-width: 100%;
   text-align: center;
@@ -17,6 +18,13 @@
 
 .gift-title {
   font-size: 20px;
+  color: #5e616a;
+}
+
+.gift-price {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #5e616a;
 }
 
 .gift-button {
@@ -35,7 +43,7 @@
 }
 
 .chooseCategory-title {
-  margin-top: 80px;
+  margin-top: 30px;
   font-size: 30px;
   text-align: center;
   color: #5e616a;
@@ -61,4 +69,18 @@ select {
   position: relative;
   text-align: center;
   margin-top: 40px;
+}
+
+.gift-search {
+  border: 0;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  background-color: none;
+  border: 1px solid #5e616a;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 500px;
 }
