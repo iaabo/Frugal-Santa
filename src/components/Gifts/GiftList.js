@@ -1,13 +1,14 @@
 import React from "react";
 import Gift from "./Gift";
 import Filter from "./Filter";
-/* import SearchBar from "./SearchBar"; */
+import SearchBar from "./SearchBar";
+import { GiftData } from "./GiftData";
 import "../Home/Home.css";
 
 class GiftList extends React.Component {
   state = {
     searchValue: "",
-    gifts: [
+    gifts: GiftData /* [
       {
         id: 1,
         title: "Smilling Sheep",
@@ -248,14 +249,15 @@ class GiftList extends React.Component {
         image:
           "https://images.pexels.com/photos/1666320/pexels-photo-1666320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
         url: "https://www.linkedin.com/in/inesbarroso/",
-      },
-    ],
+      }, */,
+    /*  ], */
     giftsCategory: "",
   };
-  /* searchProductHandler = (event) => {
+
+  searchProductHandler = (event) => {
     const inputValue = event.target.value;
     this.setState({ searchValue: inputValue });
-  }; */
+  };
 
   handleChangeFilter = (event) => {
     this.setState({
@@ -276,14 +278,15 @@ class GiftList extends React.Component {
 
     return (
       <div>
-        {/* <SearchBar searchProductHandler={this.searchGifts} /> */}
-       
+        <SearchBar searchProductHandler={this.searchGifts} />
+
         <h1 className="chooseCategory-title">Choose the Category</h1>
 
         <Filter
           value={this.state.giftsCategory}
           handleChange={this.handleChangeFilter}
         />
+        {/* {this.getFilteredGifts()} */}
         <Gift gifts={gifts} />
 
         {/* {this.state.gifts.map((gift) => (

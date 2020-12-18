@@ -1,16 +1,30 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
-import GiftList from "../Gifts/GiftList";
+import Gift from "../Gifts/Gift";
+import { GiftData } from "../Gifts/GiftData";
+import "../Home/Home.css";
 
-function GiftsUnder10() {
-  return (
-    <div>
-      <NavBar />
-      <GiftList />
-      <Footer />
-    </div>
-  );
+class GiftsUnder10 extends React.Component {
+  state = {
+    gifts: GiftData,
+  };
+
+  render() {
+    return (
+      <div>
+        <NavBar />
+        <h1 className="chooseCategory-title">Choose the Category</h1>
+
+        {this.state.gifts
+          .filter((gift) => gift.price <= 10 && gift)
+          .map((gift) => (
+            <Gift {...gift} key={gift.id} />
+          ))}
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default GiftsUnder10;
