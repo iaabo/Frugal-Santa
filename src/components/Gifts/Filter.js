@@ -2,11 +2,13 @@ import React from "react";
 import "./Gifts.css";
 
 function Filter(props) {
-  const { value, handleChange } = props;
   return (
     <div className="custom-select">
-      <select value={value} onChange={handleChange}>
-        <option value="">All</option>
+      <select defaultValue="Category" onChange={props.handleChange}>
+        <option disabled value="Category">
+          Category
+        </option>
+        <option value="all">All</option>
         <option value="woman">Woman</option>
         <option value="man">Man</option>
         <option value="kids">Kids</option>

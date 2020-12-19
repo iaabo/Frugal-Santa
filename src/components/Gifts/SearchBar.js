@@ -1,16 +1,21 @@
 import React from "react";
 
-function SearchBar(props) {
+const SearchBar = (props) => {
   return (
-    <div className="searchbar">
-      <input
-        onChange={props.searchProductHandler}
-        placeholder="search here the product"
-        type="text"
-        className="gift-search"
-      />
+    <div className="user-inputs">
+      <select
+        defaultValue="Sort"
+        className="searchbar"
+        onChange={props.handleSort}
+      >
+        <option disabled value="Sort">
+          Sort
+        </option>
+        <option value="Decrease price">Price high to low</option>
+        <option value="Increase price">Price low to high</option>
+      </select>
     </div>
   );
-}
+};
 
 export default SearchBar;

@@ -25,13 +25,13 @@ export const SidebarData = [
     className: "nav-text",
   },
   {
-    title: "Gifts under 20",
+    title: "Gifts 10€ - 20€",
     path: "/gifts20",
     icon: <AiOutlineGift />,
     className: "nav-text",
   },
   {
-    title: "Gifts under 50",
+    title: "Gifts 20€ - 50€",
     path: "/gifts50",
     icon: <AiOutlineGift />,
     className: "nav-text",
