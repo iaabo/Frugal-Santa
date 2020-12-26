@@ -33,29 +33,29 @@
   padding: 15px;
   margin: 10px 0px 0px 0px;
   font-size: 18px;
-  background-color: #e8aa8c;
+  background-color: #A44D43;
   font-weight: bold;
   cursor: pointer;
 }
 
 .gift-button:hover {
-  background-color: #5e616a;
+  background-color: #4a1c1e;
 }
 
 .chooseCategory-title {
   margin-top: 30px;
   font-size: 30px;
   text-align: center;
-  color: #5e616a;
+  color: #A89263;
 }
 
 select {
-  color: #fff;
+  color: #A89263;
   border: 0;
   font-size: 20px;
   text-align: center;
   display: inline-block;
-  background-color: #e8aa8c;
+  background-color: #A44D43;
   border: 1px solid #dddddd;
   cursor: pointer;
   padding: 8px 12px;

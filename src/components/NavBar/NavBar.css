@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #e8aa8c;
+  background-color: #803638;
   height: 80px;
   display: flex;
   justify-content: start;
@@ -9,7 +9,7 @@
 .navbar-name {
   margin-left: 20px;
   font-size: 25px;
-  color: #fff;
+  color: #a89263;
 }
 .menu-bars {
   margin-left: 2rem;
@@ -18,7 +18,7 @@
 }
 
 .nav-menu {
-  background-color: #e8aa8c;
+  background-color: #803638;
   width: 250px;
   height: 100vh;
   display: flex;
@@ -49,7 +49,7 @@
 
 .nav-text a {
   text-decoration: none;
-  color: #fff;
+  color: #a89263;
   font-size: 18px;
   width: 90%;
   height: 100%;
@@ -61,7 +61,7 @@
 }
 
 .nav-text a:hover {
-  background-color: #5e616a;
+  background-color: #4a1c1e;
 }
 
 .nav-menu-items {
@@ -69,7 +69,7 @@
 }
 
 .navbar-toggle {
-  background-color: #e8aa8c;
+  background-color: #803638;
   width: 100%;
   height: 80px;
   display: flex;

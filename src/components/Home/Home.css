@@ -1,6 +1,6 @@
 .img-container {
   /* position: relative; */
-  background: url("../../assets/Budget.jpg");
+  background: url("../../assets/secret-santa1.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -9,7 +9,7 @@
 
 .img-container-child {
   /* position: relative; */
-  background: url("../../assets/child2.jpg");
+  background: url("../../assets/secret-santa7.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -18,7 +18,7 @@
 
 .img-container-woman {
   /* position: relative; */
-  background: url("../../assets/About.jpg");
+  background: url("../../assets/secret-santa7.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -27,7 +27,7 @@
 
 .img-container-man {
   /* position: relative; */
-  background: url("../../assets/man.jpg");
+  background: url("../../assets/secret-santa7.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -36,7 +36,7 @@
 
 .img-container-about {
   /* position: relative; */
-  background: url("../../assets/About.jpg");
+  background: url("../../assets/local.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -69,7 +69,7 @@
   margin-top: 80px;
   font-size: 30px;
   text-align: center;
-  color: #5e616a;
+  color: #A89263;
 }
 
 .buttons {
@@ -78,7 +78,7 @@
 }
 .button-menu {
   display: inline-block;
-  background-color: #e8aa8c;
+  background-color: #A44D43;
   border: 0;
   cursor: pointer;
   padding: 20px 25px;
@@ -92,8 +92,8 @@
 }
 .button-menu a {
   text-decoration: none;
-  color: #fff;
+  color: #A89263;
 }
 .button-menu:hover {
-  background-color: #5e616a;
+  background-color:  #4a1c1e;
 }
