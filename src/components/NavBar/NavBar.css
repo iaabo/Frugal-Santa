@@ -1,9 +1,12 @@
 .navbar {
   background-color: #803638;
-  height: 80px;
+  height: 70px;
   display: flex;
   justify-content: start;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar-name {
@@ -49,7 +52,7 @@
 
 .nav-text a {
   text-decoration: none;
-  color: #a89263;
+  color: #ffffff;
   font-size: 18px;
   width: 90%;
   height: 100%;

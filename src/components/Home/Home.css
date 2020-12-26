@@ -1,3 +1,5 @@
+
+
 .img-container {
   /* position: relative; */
   background: url("../../assets/secret-santa1.jpg");
@@ -69,7 +71,7 @@
   margin-top: 80px;
   font-size: 30px;
   text-align: center;
-  color: #A89263;
+  color: #a89263;
 }
 
 .buttons {
@@ -78,7 +80,7 @@
 }
 .button-menu {
   display: inline-block;
-  background-color: #A44D43;
+  background-color: #a44d43;
   border: 0;
   cursor: pointer;
   padding: 20px 25px;
@@ -92,8 +94,8 @@
 }
 .button-menu a {
   text-decoration: none;
-  color: #A89263;
+  color: #a89263;
 }
 .button-menu:hover {
-  background-color:  #4a1c1e;
+  background-color: #4a1c1e;
 }
