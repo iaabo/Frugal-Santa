@@ -6,7 +6,7 @@ import { GiftData } from "../Gifts/GiftData";
 import Search from "../Gifts/SearchBar";
 import "../Home/Home.css";
 
-class GiftsUnder10 extends React.Component {
+class ManUnder50 extends React.Component {
   state = {
     gifts: GiftData,
     sort: "",
@@ -30,15 +30,18 @@ class GiftsUnder10 extends React.Component {
         <NavBar />
         <h1 className="chooseCategory-title">Gifts under 10€</h1>
         <Search handleSort={this.handleSort} />
+
         {this.state.gifts
-          .filter((gift) => gift.price <= 10 && gift)
+          .filter((gift) => gift.category === "man" && gift)
+          .filter((gift) => gift.price > 20 && gift.price <= 50 && gift)
           .map((gift) => (
             <Gift {...gift} key={gift.id} />
           ))}
+
         <Footer />
       </div>
     );
   }
 }
 
-export default GiftsUnder10;
+export default ManUnder50;

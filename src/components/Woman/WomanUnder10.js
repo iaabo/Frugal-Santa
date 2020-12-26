@@ -2,11 +2,11 @@ import React from "react";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import Gift from "../Gifts/Gift";
-import Search from "../Gifts/SearchBar";
 import { GiftData } from "../Gifts/GiftData";
+import Search from "../Gifts/SearchBar";
 import "../Home/Home.css";
 
-class GiftsUnder50 extends React.Component {
+class WomanUnder10 extends React.Component {
   state = {
     gifts: GiftData,
     sort: "",
@@ -24,21 +24,24 @@ class GiftsUnder50 extends React.Component {
         return a.price - b.price;
       }
     });
+
     return (
       <div>
         <NavBar />
-        <h1 className="chooseCategory-title">Gifts between 20-50€</h1>
+        <h1 className="chooseCategory-title">Gifts under 10€</h1>
         <Search handleSort={this.handleSort} />
 
         {this.state.gifts
-          .filter((gift) => gift.price > 20 && gift.price <= 50 && gift)
+          .filter((gift) => gift.category === "woman" && gift)
+          .filter((gift) => gift.price <= 10 && gift)
           .map((gift) => (
             <Gift {...gift} key={gift.id} />
           ))}
+
         <Footer />
       </div>
     );
   }
 }
 
-export default GiftsUnder50;
+export default WomanUnder10;
