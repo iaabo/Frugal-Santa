@@ -32,7 +32,7 @@ class ManUnder20 extends React.Component {
         <div className="img-container-man">
           <div className="background-container"></div>
         </div>
-        <h1 className="chooseCategory-title">Gifts 10€ - 20€</h1>
+        <h1 className="chooseCategory-title">Our Proposal</h1>
         <Link
           to="man"
           className="button-menu"

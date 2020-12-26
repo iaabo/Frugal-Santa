@@ -32,7 +32,7 @@ class ChildUnder20 extends React.Component {
         <div className="img-container-child">
         <div className="background-container"></div>
       </div>
-        <h1 className="chooseCategory-title">Gifts 10€ - 20€</h1>
+        <h1 className="chooseCategory-title">Our Proposal</h1>
         <Link
           to="child"
           className="button-menu"
