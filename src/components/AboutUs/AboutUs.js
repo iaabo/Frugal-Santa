@@ -19,7 +19,7 @@ const AboutUs = () => {
           </p>
           <p className="question1">
             There are amazing stores in your neighbourhood that need your support!
-            Buy locally!
+            Buy local!
           </p>
           <div className="pictures">
             <img src={local} alt="" />

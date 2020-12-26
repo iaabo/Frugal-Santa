@@ -5,6 +5,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  background-color: #fbfbfb;
 }
 
 * {
@@ -13,57 +14,98 @@ body {
   margin: 0;
 }
 
-.landing-page {
-  clear: both;
-  overflow: hidden;
-}
+/* .img-container-header {
 
-header {
-  overflow: hidden;
-}
+  background: url("../../assets/secret-santa4.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+} */
 
-.video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translate(-50%, -50%);
-  opacity: 0.7;
-}
-
-.landing-elements {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.message {
+  margin: 120px 60px 70px 60px;
   text-align: center;
-  transform: translate(-50%, -50%);
+}
+
+.message-h1 {
+  font-size: 50px;
+  color: #a89263;
+  margin-bottom: 15px;
+}
+
+.message-h2 {
+  font-size: 20px;
+  font-weight: 200;
+  color: #3d3939;
+  margin-bottom: 15px;
+}
+
+.how-it-works-title {
+  font-size: 35px;
+  background-color: #803638;
+  font-weight: bold;
+  color: #fbfbfb;
+  text-align: center;
+}
+
+.wrapper {
+  float: left;
+  width: 33%;
+  background-color: #a89263;
+}
+
+.wrapper .cards-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  margin-top: 100px;
 }
 
-img {
-  width: 500px;
-  height: auto;
+.cards-image {
+  width: 30%;
+  height: 30%;
+  margin-bottom: 15px;
+}
+
+.cards-description {
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 30px;
+  margin-bottom: 70px;
 }
 
 .button-start {
-  display: inline-block;
-  border: 0;
+  background-color: #803638;
   cursor: pointer;
-  padding: 20px 25px;
-  background-color: #e8aa8c;
-  border-radius: 0.7rem;
+  font-size: 35px;
+  background-color: #803638;
   font-weight: bold;
-  margin: 2rem;
-  margin: 1rem 1rem;
-  text-transform: uppercase;
-  color: #222;
-  font-size: 1.4rem;
+  color: #fbfbfb;
+  text-align: center;
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  text-align: center;
 }
+
 .button-start:hover {
-  background-color: #fff;
+  background-color: #000000;
+}
+
+@media only screen and (max-width: 550px) {
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper .cards-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .cards-description {
+    font-size: 15px;
+  }
 }
