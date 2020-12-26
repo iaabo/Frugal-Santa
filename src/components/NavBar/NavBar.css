@@ -5,6 +5,12 @@
   justify-content: start;
   align-items: center;
 }
+
+.navbar-name {
+  margin-left: 20px;
+  font-size: 25px;
+  color: #fff;
+}
 .menu-bars {
   margin-left: 2rem;
   font-size: 2rem;
