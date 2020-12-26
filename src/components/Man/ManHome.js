@@ -8,7 +8,7 @@ const ManHome = () => {
   return (
     <div>
       <NavBar />
-      <div className="img-container">
+      <div className="img-container-man">
         <div className="background-container"></div>
       </div>
       <div className="budget-question">

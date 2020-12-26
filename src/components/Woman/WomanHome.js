@@ -8,7 +8,7 @@ const WomanHome = () => {
   return (
     <div>
       <NavBar />
-      <div className="img-container">
+      <div className="img-container-woman">
         <div className="background-container"></div>
       </div>
       <div className="budget-question">

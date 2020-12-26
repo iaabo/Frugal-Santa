@@ -7,22 +7,20 @@ function Gift(props) {
     <div className="card">
       <div className="products">
         <img src={props.image} className="product-img" />
-        <h1 className="gift-title">{props.title}</h1>
-         <p className="gift-store">{props.store}</p>
-        <p className="gift-description">{props.description}</p>
         <p className="gift-price">{props.price}€</p>
-        <Link to={`/gift/${props.id}`}>View Details</Link>
-          <button className="gift-button">
-          {" "}
-          <a
-            href={props.url}
-            target="_black"
+        <h1 className="gift-title">{props.title}</h1>
+        <p className="gift-store">{props.store}</p>
+        {/* <p className="gift-description">{props.description}</p> */}
+        <div className="button">
+          <Link
+            to="about-us"
+            className="gift-button"
             style={{ textDecoration: "none", color: "white" }}
           >
             {" "}
             Contact Store
-          </a>
-        </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

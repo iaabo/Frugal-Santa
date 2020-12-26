@@ -29,7 +29,7 @@ class WomanUnder10 extends React.Component {
     return (
       <div>
         <NavBar />
-        <div className="img-container">
+        <div className="img-container-woman">
         <div className="background-container"></div>
       </div>
         <h1 className="chooseCategory-title">Gifts under 10€</h1>
