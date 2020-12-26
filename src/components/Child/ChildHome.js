@@ -8,22 +8,38 @@ const ChildHome = () => {
   return (
     <div>
       <NavBar />
-     
+      <div className="img-container">
+        <div className="background-container"></div>
+      </div>
       <div className="budget-question">
         <h2> How much is your budget?</h2>
         <div className="buttons">
-          <button className="button-menu">
-            <Link to="/childgifts10">Under 10€</Link>
-          </button>
-          <button className="button-menu">
-            <Link to="/childgifts20">10€-20€</Link>
-          </button>
-          <button className="button-menu">
-            <Link to="childgifts50">20€-50€</Link>
-          </button>
+          <Link
+            to="/childgifts10"
+            className="button-menu"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Under 10€
+          </Link>
+
+          <Link
+            to="/childgifts20"
+            className="button-menu"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            10€-20€
+          </Link>
+
+          <Link
+            to="childgifts50"
+            className="button-menu"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            20€-50€
+          </Link>
         </div>
       </div>{" "}
-      <Footer />
+      <Footer/>
     </div>
   );
 };

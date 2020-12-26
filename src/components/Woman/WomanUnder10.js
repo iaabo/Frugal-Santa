@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import Gift from "../Gifts/Gift";
+import { Link } from "react-router-dom";
 import { GiftData } from "../Gifts/GiftData";
 import Search from "../Gifts/SearchBar";
 import "../Home/Home.css";
@@ -28,7 +29,17 @@ class WomanUnder10 extends React.Component {
     return (
       <div>
         <NavBar />
+        <div className="img-container">
+        <div className="background-container"></div>
+      </div>
         <h1 className="chooseCategory-title">Gifts under 10€</h1>
+        <Link
+          to="woman"
+          className="button-menu"
+          style={{ textDecoration: "none", color: "white" }}
+        >
+          Return
+        </Link>
         <Search handleSort={this.handleSort} />
 
         {this.state.gifts
