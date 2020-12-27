@@ -1,3 +1,30 @@
+# The Frugal Santa
+
+Done with React.js.
+Pictures from Pexels.com
+Responsive frontend web application
+
+# Business Problem
+
+Help people choose original gifts for the Secret Santa, depending on the budget
+
+# Demo:
+
+https://the-frugal-santa.netlify.app/
+
+# How it Works:
+
+The user selects the person (man, woman, child) and the budget. Then it appears only the gifts that are in that category.
+The user can also sort the products according with the price.
+
+# Business Idea, Code and design
+
+Done by Inês Barroso, as a side project when attending Wild Code School-Lisboa. December, 2020.
+
+# Keywords
+
+Single Page Application, React Router, CSS, Responsiveness, UX-UI, React Icons, SideBar
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
