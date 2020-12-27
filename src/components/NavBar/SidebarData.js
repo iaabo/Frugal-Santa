@@ -3,7 +3,6 @@ import { AiOutlineHome } from "react-icons/ai";
 import { FaRegListAlt } from "react-icons/fa";
 import { AiOutlineGift } from "react-icons/ai";
 import { TiContacts } from "react-icons/ti";
-/* import { IoPeopleSharp } from "react-icons/io"; */
 
 export const SidebarData = [
   {
