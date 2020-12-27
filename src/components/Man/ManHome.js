@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
-/* import "./Home.css"; */
 import Footer from "../Footer/Footer";
+import "./ManGifts.css";
+import "../Home/Home.css";
 
 const ManHome = () => {
   return (
