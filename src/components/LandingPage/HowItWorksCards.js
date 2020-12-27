@@ -9,7 +9,7 @@ function HowItWorksCards() {
       <HowItWorks description="Select your Secret Santa" cardImage={question} />
       <HowItWorks description="Select your Budget" cardImage={wallet} />
       <HowItWorks
-        description="See the collection of gifts we selected for you"
+        description="See the collection of gifts The Frugal Santa has for you"
         cardImage={gift}
       />
     </div>
