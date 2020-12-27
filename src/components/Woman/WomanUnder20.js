@@ -30,18 +30,19 @@ class WomanUnder20 extends React.Component {
       <div>
         <NavBar />
         <div className="img-container-woman">
-        <div className="background-container"></div>
-      </div>
-        <h1 className="chooseCategory-title">Our Proposal</h1>
-        <Link
-          to="woman"
-          className="button-menu"
-          style={{ textDecoration: "none", color: "white" }}
-        >
-          Return
-        </Link>
-        <Search handleSort={this.handleSort} />
-
+          <div className="background-container"></div>
+        </div>
+        <h1 className="chooseCategory-title">The Santa Proposal</h1>
+        <div className="buttons-categories">
+          <Link
+            to="woman"
+            className="button-menu-return"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Return
+          </Link>
+          <Search handleSort={this.handleSort} />
+        </div>
         {this.state.gifts
           .filter((gift) => gift.category === "woman" && gift)
           .filter((gift) => gift.price > 10 && gift.price <= 20 && gift)
