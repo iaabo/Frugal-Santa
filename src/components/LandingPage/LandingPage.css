@@ -30,30 +30,34 @@ body {
 
 .message-h1 {
   font-size: 50px;
-  color: #a89263;
+  color: #fff;
   margin-bottom: 15px;
+  padding: 20px 20px;
+  background-color: #a89263;
+  display: none;
 }
+
+
 
 .message-h2 {
   font-size: 20px;
   font-weight: 200;
-  color: #3d3939;
-  margin-bottom: 15px;
+  color: #686565;
+  margin-top: 15px;
+  margin-bottom: 35px;
+  font-style: oblique;
 }
 
 .how-it-works-title {
   font-size: 35px;
-  background-color: #803638;
   font-weight: bold;
-  color: #fbfbfb;
+  color: #803638;
   text-align: center;
 }
-
 
 .wrapper {
   float: left;
   width: 33%;
-  background-color: #a89263;
 }
 
 .wrapper .cards-info {
@@ -80,12 +84,14 @@ body {
 .button-start {
   background-color: #803638;
   cursor: pointer;
-  font-size: 35px;
+  font-size: 25px;
+  padding: 15px 15px;
+  border-radius: 18px;
   background-color: #803638;
   font-weight: bold;
   color: #fbfbfb;
   text-align: center;
-  width: 100%;
+  width: 150px;
   display: table;
   margin: 0 auto;
   margin-bottom: 100px;
@@ -93,10 +99,10 @@ body {
 }
 
 .button-start:hover {
-  background-color: #000000;
+  background-color: #a89263;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) {
   .wrapper {
     width: 100%;
   }
